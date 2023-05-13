@@ -1,0 +1,58 @@
+#  run -all
+# 1) Checking Square Wave Output
+# Divider set to 256Hz(3.9ms) Time=3906090 ns
+# Divider set to 8192Hz(122us) Time=123210 ns
+# Divider set to 128Hz(7.8ms) Time=7812180 ns
+# Divider set to no output *** PASS ***
+# First update after DV2:0=110 is = 499979389 ns
+# 2) Checking Time/Clock Output in BIN mode
+# Checking Time 23:59:58 + 2 seconds = 00:00:00 *** PASS ***
+# 3) Checking Time/Clock Output in BCD mode
+# Checking Time 23:59:58 + 2 seconds = 00:00:00 *** PASS ***
+# 4) Checking 24hour to AM/PM conversion
+# Checking Time 00:10:30 = 12:10:30 AM *** PASS ***
+# Checking Time 10:10:30 = 10:10:30 AM *** PASS ***
+# Checking Time 12:10:30 = 12:10:30 PM *** PASS ***
+# Checking Time 13:10:30 = 01:10:30 PM *** PASS ***
+# Checking Time 23:10:30 = 11:10:30 PM *** PASS ***
+# 5) Checking AM/PM to 24hour conversion
+# Checking Time 12:10:30AM = 00:10:30 *** PASS ***
+# Checking Time 10:10:30AM = 10:10:30 *** PASS ***
+# Checking Time 12:10:30PM = 12:10:30 *** PASS ***
+# Checking Time 03:10:30PM = 15:10:30 *** PASS ***
+# Checking Time 10:10:30PM = 22:10:30 *** PASS ***
+# 6) Check for leap year
+# Checking Leap Year 28-Feb-2007 -> 29-Feb-2008   *** PASS ***
+# Checking None Leap Year 28-Feb-2007 -> 01-March-2007   *** PASS ***
+# 7) Checking calender month
+# Checking Jan30 -> Jan31   *** PASS ***
+# Checking Mar30 -> Mar31   *** PASS ***
+# Checking Apr30 -> Jun01   *** PASS ***
+# Checking May30 -> May31   *** PASS ***
+# Checking Jun30 -> Jul01   *** PASS ***
+# Checking Jul30 -> Jul31   *** PASS ***
+# Checking Aug30 -> Aug31   *** PASS ***
+# Checking Sep30 -> Oct01   *** PASS ***
+# Checking Oct30 -> Oct31   *** PASS ***
+# Checking Nov30 -> Dec01   *** PASS ***
+# Checking Dec30 -> Dec31   *** PASS ***
+# Checking Dec31 -> Jan01   *** PASS, HAPPY NEW YEAR ***
+# 8) Checking Alarm function
+# Waiting for Alarm  *** PASS ***
+# Waiting for Alarm  *** PASS ***
+# Waiting for Alarm  *** PASS ***
+# 9) Checking Periodic Interrupts
+# Enable PIE, period=125ms,
+# *** IRQ *** time between IRQ=125001540 ns
+# *** IRQ *** time between IRQ=125001540 ns
+# Enable PIE, period=122us,
+# *** IRQ *** time between IRQ=119880 ns
+# *** IRQ *** time between IRQ=123210 ns
+# 10) Checking Update Ended Interrupts
+# Enable UIE, period=1sec,
+# *** IRQ *** time between IRQ=500009490 ns
+# *** IRQ *** time between IRQ=500006160 ns
+# 11) Checking Alarm Interrupts
+# Set Alarm for 01:09:01, Waiting for IRQ.....
+# *** IRQ *** Time = 01:09:01 *** PASS ***
+# ** Failure: *** All tests passed ***

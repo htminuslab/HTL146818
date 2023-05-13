@@ -1,0 +1,14 @@
+bin_2_bcd.vhd
+bin_2_bcdpm.vhd
+binpm_2_bin.vhd
+redge.vhd
+ram_synch_in.vhd
+mem_block_rtl.vhd
+redge3ff.vhd
+clock_gen_rtl.vhd
+timefsm.vhd
+bin_2_binpm.vhd
+bcd_2_bin.vhd
+alarm_rtl.vhd
+bcdpm_2_bin.vhd
+htl146818.vhd
